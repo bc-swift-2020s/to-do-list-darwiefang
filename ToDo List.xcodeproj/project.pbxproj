@@ -14,6 +14,7 @@
 		4833EF9B23EDF6E1008E50E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4833EF9A23EDF6E1008E50E6 /* Assets.xcassets */; };
 		4833EF9E23EDF6E1008E50E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4833EF9C23EDF6E1008E50E6 /* LaunchScreen.storyboard */; };
 		4869D753241592B400E06D90 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4869D752241592B400E06D90 /* ToDoItem.swift */; };
+		48B7115A241690D0008FF6E8 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B71159241690D0008FF6E8 /* ListTableViewCell.swift */; };
 		48F975BD23F37BDB00A212AF /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F975BC23F37BDB00A212AF /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		4833EF9D23EDF6E1008E50E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4833EF9F23EDF6E1008E50E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4869D752241592B400E06D90 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		48B71159241690D0008FF6E8 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		48F975BC23F37BDB00A212AF /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +68,7 @@
 				4833EF9523EDF6DE008E50E6 /* ViewController.swift */,
 				48F975BC23F37BDB00A212AF /* TableViewController.swift */,
 				4833EF9723EDF6DE008E50E6 /* Main.storyboard */,
+				48B71159241690D0008FF6E8 /* ListTableViewCell.swift */,
 				4833EF9A23EDF6E1008E50E6 /* Assets.xcassets */,
 				4833EF9C23EDF6E1008E50E6 /* LaunchScreen.storyboard */,
 				4833EF9F23EDF6E1008E50E6 /* Info.plist */,
@@ -149,6 +152,7 @@
 				4869D753241592B400E06D90 /* ToDoItem.swift in Sources */,
 				4833EF9423EDF6DE008E50E6 /* SceneDelegate.swift in Sources */,
 				48F975BD23F37BDB00A212AF /* TableViewController.swift in Sources */,
+				48B7115A241690D0008FF6E8 /* ListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

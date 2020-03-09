@@ -27,6 +27,41 @@ class ToDoListViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         loadData()
+        autherizeLocalNotifications()
+    }
+    func autherizeLocalNotifications() {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error)}
+    
+        guard error == nil else {
+            print("error")
+            return
+        }
+        if granted {
+            print("")
+            return
+        }
+        if granted {
+            print("")
+        } else {
+            
+        }
+        func setCalendarNotifications(title: String, subtitle: String, body: String, badgeNumber: NSNumber?, sound: UNNotificationSound?, date: Date) -> String {
+            let content = UNMutableNotificationContent()
+            content.title = title
+            content.subtitle = subtitle
+            content.body = body
+            content.badge = badgeNumber
+        
+        }
+        let notificationID = UUID().uuidString
+        let request = UNNotificationRequest(identifier: notificationID, content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: Error) {
+            print("error")
+            else {
+                
+            }
+        }
+       return notificationID
     }
     func loadData() {
         let
@@ -53,6 +88,8 @@ class ToDoListViewController: UIViewController {
             try data?.write(to: documentURL, option: .noFileProtection) } catch {
                 print("error)
         }
+        let toDoItem = toDoItems.first!
+        let notificationID = setCalendarNotification(title: toDoItem.name, subtitle: "SUBTITLE WOULD GO HERE", body: toDoItem.notes, badgeNumber: nil, sound: .default, date: toDoItem.date)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowDetail" {
