@@ -12,7 +12,7 @@ private let dateFormatter: DateFormatter = {
     let dateFormatter = DateFormatter()
     DateFormatter.dateStyle = .short
     DateFormatter.timeStyle = .short
-    return DateFormatter
+    return dateFormatter
 }
 
 
